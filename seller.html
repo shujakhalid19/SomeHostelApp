@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+
+    <style type="text/css">
+   
+
+        .list-group>li {
+            background-color: transparent;
+
+            padding: 10px;
+            border: none;
+
+            line-height: 30px;
+        }
+        
+        .prof-img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            padding:10px;
+        }
+        
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .xs-hide{
+                display: none;
+            }
+
+            .photo{
+                height: 150px;
+            }
+
+            .col-xs-12>.photo{
+                height: 250px;
+            }
+            
+        }
+        
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .sm-hide{
+                display: none;
+            }
+            
+            .prof-img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                padding:10px;
+            }
+            
+        }
+        
+       /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .md-hide{
+                display:none;
+            }
+
+            .photo{
+                height: 150px;
+            }
+        }
+        
+
+    </style>
+<style type="text/css">
+                    .bd{
+                        border:1px solid #d4d4d4;
+                    }
+
+                    
+                </style>
+</head>
+
+<body class="">
+
+    <!-- BAVNAT -->
+    <nav class="navbar navbar-default banner">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-right navbar-form-search" role="search">
+
+                    <div class="search-form-container hdn" id="search-input-container">
+
+                        <div class="search-input-group">
+
+                            <div id="search-input" class="form-group">
+                                <input type="text" class="form-control" placeholder="Search for...">
+                                <button type="submit" class="btn btn-default" id="search-button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                <button class="btn tog-btn" id="search-button" style="display: inline;" onclick="togTheme();return false;"><span class="fa fa-moon" aria-hidden="true"></span></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </form>
+                <ul class="nav navbar-nav navbar-right navbar-nav-primary">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Publication</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- ..NAVBAR -->
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-bottom:50px;">
+            <div id="about" class="col-md-3 col-sm-3 col-xs-12 bd">
+
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="prof-img" style="" />
+                </div>
+
+                <div>
+
+                    <br />
+                    <div class="text-center"><span class="b f-22">Shuja Khalid</span></div>
+                    <br />
+                    
+                    <ul class="nav nav-pills nav-stacked">
+                      <li  data-toggle="tab" href="#home"class="active"><a href="#">Profile</a></li>
+                      <li data-toggle="tab" href="#edit"><a href="#">Edit</a></li>
+                      <li data-toggle="tab" href="#work"><a href="#"> Work</a></li>
+                      <li><a href="#">Menu 3</a></li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="col-md-9 col-sm-9 col-xs-12 about">
+
+                <div class="tab-content">
+                  <div id="home" class="tab-pane fade">
+                     <h1 class="b bd-rt-blue" style="margin-bottom: 30px;">Profile
+                    <button class="pull-right f-15 btn btn-sm btn-success">
+                        <i class=" fa fa-plus"></i> Add More
+                    </button>
+                </h1>
+
+                    
+                    <div class="col-md-6 col-sm-5 col-xs-12 bg-info">
+                        <h4 class="b ">Details</h4>
+                        <form class="col-md-12 ">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="loc" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                
+                                <label>Country:</label>
+                                <!-- <input type="text" name="loc" class="form-control"> -->
+                                <select class="form-control selectpicker" data-live-search="true">
+                                  <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                  <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                  <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>City:</label>
+                                <!-- <input type="text" name="loc" class="form-control"> -->
+                                <select class="form-control selectpicker" data-live-search="true">
+                                  <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                  <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                  <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nearest University:</label>
+                                <input type="text" name="loc" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>How far is the nearest University?(in kms)</label>
+                                <input type="text" name="loc" class="form-control"> 
+                            </div>
+                            <div class="form-group">
+                                <label>Contact:</label>
+                                <input type="text" name="loc" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Update" name="loc" class="form-control btn btn-md btn-primary">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-md-6 col-sm-5 col-xs-12 bd">
+                        Add Atleast 3 pictures
+                    </div>
+                  </div>
+                  <div id="edit" class="tab-pane fade in active">
+                                    <h1 class="b bd-rt-blue">Edit
+                    <button class="pull-right f-15 btn btn-success" onclick="a(this)">
+                        <i class="fa fa-plus"></i> Add More
+                    </button>
+                </h1>
+                
+                    <br/>
+                        <form class="col-md-12">
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputEmail4">Name</label>
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputEmail4">Number of rooms</label>
+                                  <input type="text" class="form-control" id="inputEmail4" placeholder="12">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputEmail4">Type</label>
+                                  <select class="form-control selectpicker" data-live-search="true">
+                                  <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                                  <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                                  <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                                </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Nearest University:</label>
+                                    <input type="text" name="loc" class="form-control">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>How far is the nearest University?(in kms)</label>
+                                    <input type="text" name="loc" class="form-control"> 
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label for="inputEmail4">Monthly Cost</label>
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="$200">
+                                </div>
+                                
+                              <div class="form-group col-md-12">
+                                <label for="inputAddress">Description</label>
+                                <textarea class="form-control">
+                                    
+                                </textarea>
+                                <template>asdasdasd</template>
+
+                              </div>
+                              
+                              <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <label for="inputCity">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                  <label for="inputState">State</label>
+                                  <select id="inputState" class="form-control">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="inputZip">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                                  <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+           
+
+               
+
+                  </div>
+                  <div id="work" class="tab-pane fade">
+
+                        <h1 class="b bd-rt-blue" style="margin-bottom: 30px;">Work
+                    <button class="pull-right f-15 btn btn-sm btn-success">
+                        <i class=" fa fa-plus"></i> Add More
+                    </button>
+                </h1>
+<!--WORK CARD -->                
+                <div class="col-md-6 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
+                    <div class="col-md-6 col-sm-4 col-xs-6" style="padding: 0px;">
+
+
+                    <div class="col-md-12  col-xs-12" style="height: 200px;background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);background-size: 150% 100%;margin-bottom: 10px;">
+                        <div class="f-22 text-center" style="width:50px;display: inline-block;border-radius: 10px; background-color: #eee;margin:70px 0px 0px 35%;padding:10px;">
+                            <i class="fa fa-play"></i>
+
+                        </div>
+
+                    </div>
+                    <!-- <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width: 100%;height:200px;object-fit: cover;"> -->
+                         <h5 class="b">Lorem 2 ipsum sut amore dolor velloew</h5> 
+
+
+
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <br/>
+                        <p>
+                            Lorem ipsun sut amore dolor cesia asd vist sd asdasdas d asd a sdasdasd asd as d asd
+                        </p>
+
+                            <div class="f-12">
+                                <strong>Animation</strong> |<span style="opacity: 0.8;"> 2 Feb,2020 </span>|<span style="opacity: 0.8;"> 2600 Views</span>
+                            </div>
+                    </div>
+                    
+                        
+                </div>
+<!--//WORK CARD -->
+
+
+<!--WORK CARD -->                
+                <div class="col-md-6 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
+                    <div class="col-md-6 col-sm-4 col-xs-6" style="padding: 0px;">
+
+
+                    <div class="col-md-12  col-xs-12" style="height: 200px;background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);background-size: 150% 100%;margin-bottom: 10px;">
+                        <div class="f-22 text-center" style="width:50px;display: inline-block;border-radius: 10px; background-color: #eee;margin:70px 0px 0px 35%;padding:10px;">
+                            <i class="fa fa-play"></i>
+
+                        </div>
+
+                    </div>
+                    <!-- <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width: 100%;height:200px;object-fit: cover;"> -->
+                         <h5 class="b">Lorem 2 ipsum sut amore dolor velloew</h5> 
+
+
+
+                </div>
+                <div class="col-md-6 col-xs-6" contenteditable="true">
+                    <h5 class="b">Lorem 2 ipsum sut amore dolor velloew</h5> 
+                    
+                        <p>
+                            Lorem ipsun sut amore dolor cesia asd vist sd asdasdas d asd a sdasdasd asd as d asd
+                        </p>
+
+                            <div class="f-12">
+                                <strong>Animation</strong> |<span style="opacity: 0.8;"> 2 Feb,2020 </span>|<span style="opacity: 0.8;"> 2600 Views</span>
+                            </div>
+                    </div>
+                    
+                        
+                </div>
+<!--//WORK CARD -->
+
+
+<!--WORK CARD -->                
+                <div class="col-md-6 col-sm-4 col-xs-12" style="margin-bottom: 50px;">
+                    <div class="col-md-6 col-sm-4 col-xs-6" style="padding: 0px;">
+
+
+                    <div class="col-md-12  col-xs-12" style="height: 200px;background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);background-size: 150% 100%;margin-bottom: 10px;">
+                        <div class="f-22 text-center" style="width:50px;display: inline-block;border-radius: 10px; background-color: #eee;margin:70px 0px 0px 35%;padding:10px;">
+                            <i class="fa fa-play"></i>
+
+                        </div>
+
+                    </div>
+                    <!-- <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width: 100%;height:200px;object-fit: cover;"> -->
+                         <h5 class="b">Lorem 2 ipsum sut amore dolor velloew</h5> 
+
+
+
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <br/>
+                        <p>
+                            Lorem ipsun sut amore dolor cesia asd vist sd asdasdas d asd a sdasdasd asd as d asd
+                        </p>
+
+                            <div class="f-12">
+                                <strong>Animation</strong> |<span style="opacity: 0.8;"> 2 Feb,2020 </span>|<span style="opacity: 0.8;"> 2600 Views</span>
+                            </div>
+                    </div>
+                    
+                        
+                </div>
+<!--//WORK CARD -->
+
+
+<!--WORK CARD -->                
+                <div class="col-md-6 col-sm-4 col-xs-12" style="margin-bottom: 30px;">
+                    <div class="col-md-6 col-sm-4 col-xs-6" style="padding: 0px;">
+
+
+                    <div class="col-md-12  col-xs-12" style="height: 200px;background-image: url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);background-size: 150% 100%;margin-bottom: 10px;">
+                        <div class="f-22 text-center" style="width:50px;display: inline-block;border-radius: 10px; background-color: #eee;margin:70px 0px 0px 35%;padding:10px;">
+                            <i class="fa fa-play"></i>
+
+                        </div>
+
+                    </div>
+                    <!-- <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" style="width: 100%;height:200px;object-fit: cover;"> -->
+                         <h5 class="b">Lorem 2 ipsum sut amore dolor velloew</h5> 
+
+
+
+                </div>
+                <div class="col-md-6 col-xs-6">
+                    <br/>
+                        <p>
+                            Lorem ipsun sut amore dolor cesia asd vist sd asdasdas d asd a sdasdasd asd as d asd
+                        </p>
+
+                            <div class="f-12">
+                                <strong>Animation</strong> |<span style="opacity: 0.8;"> 2 Feb,2020 </span>|<span style="opacity: 0.8;"> 2600 Views</span>
+                            </div>
+                    </div>
+                    
+                        
+                </div>
+<!--//WORK CARD -->
+
+
+               
+
+
+
+
+                </div>
+
+                
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    $(document).ready(function() {
+        
+        
+        
+        
+       if(isTouchDevice()===false) {
+     $('[data-toggle="tooltip"]').tooltip();
+}
+    });
+    
+    var mq = window.matchMedia( "(max-width: 760px)" );
+if (mq.matches) {
+    // window width is at less than 570px
+    $("ul").removeClass('nav-stacked');
+}
+else {
+    // window width is greater than 570px
+    $("ul").addClass('nav-stacked');
+}
+    
+    
+    
+    function isTouchDevice(){
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+
+var i=0;
+function a(t){
+    
+    switch(i){
+        case 0:
+            $('#addNew').show();
+            $(t).replaceWith('<button class="pull-right f-15 btn btn-success" onclick="a(this)"><i class="fa fa-angle-up"></i> Hide</button>');
+            i=1;
+            break;
+
+        case 1:
+            $('#addNew').hide();
+            $(t).replaceWith('<button class="pull-right f-15 btn btn-success" onclick="a(this)"><i class="fa fa-angle-down"></i> Add New</button>');
+            i=0;
+            break;
+    }
+
+        
+}
+
+
+
+function trigger(id){
+    $("#"+id).trigger('click');
+}
+
+ function edit_about(){
+       $("#about_txt").html('<br/><br/><div id="abt_err" class="alert alert-danger hide">Not updated</div><form id="abt_frm" method="POST" onsubmit="abt_form()"> <div class="form-group"> <textarea name="about" style="width: 100%;height:100px;border:1px solid blue;padding: 10px;resize: vertical; ">Hello so this my answer and t wills.</textarea> </div> <div class="form-group pull-right"><button class="btn btn-md btn-danger" onclick="edit_close()">Cancel</button>&nbsp;&nbsp;&nbsp;&nbsp; <input type="submit" value="Save" name="abtform" class="btn  btn-md btn-success pull-right"> </div> </form> </div>');
+
+       $("#edit_btn").hide();
+    }
+
+    function edit_close(){
+       $("#about_txt").html('<p>Hello so this my answer and t wills.</p>');
+       $("#edit_btn").show();
+       //$("#edit_btn").html('<span class="pull-right pointer f-15" onclick="edit_about()"><i class="fa fa-edit"></i>Edit</span><br/><br/>');
+    }
+
+    function abt_form(){
+        event.preventDefault();
+         $.ajax({
+            type:"POST",
+            url:"requests/profile.php",
+            data:$("form#abt_frm").serialize() + '&' + $.param({
+                    'time': d.getTime()
+                }),
+            success:function(data){
+                var resp = JSON.parse(data);
+                if(resp.status==1){
+                    $("#about_txt").html('<p>'+resp.text+'</p>');
+                    $("#edit_btn").html('<span class="pull-right pointer" onclick="edit_about()"><i class="fa fa-edit"></i> Edit</span>');
+                }else{
+                    $("#abt_err").removeClass('hide');
+                }
+            }
+
+        });
+            
+    
+    }
+
+</script>
+<script type="text/javascript">
+    $(function() {
+
+     
+
+        $('#search-button').on('click', function(e) {
+            if ($('#search-input-container').hasClass('hdn')) {
+                e.preventDefault();
+                $('#search-input-container').removeClass('hdn')
+                return false;
+            }
+        });
+
+        $('#hide-search-input-container').on('click', function(e) {
+            e.preventDefault();
+            $('#search-input-container').addClass('hdn')
+            return false;
+        });
+
+    });
+
+    function togTheme() {
+
+        $("body").toggleClass('th-dark');
+        $(".fa-moon").toggleClass('fa-sun');
+    }
+
+</script>
+
+</html>
